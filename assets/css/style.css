@@ -36,12 +36,25 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family:'Lato', sans-serif;
     list-style: none;
 }
-img{
-    max-width: 800px;
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
 }
+img{
+    max-width: 100%;
+}
+
+.top__nav--row {
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+
 div.flex{
     display: flex;
 }
@@ -51,10 +64,183 @@ div.full-container{
     margin:0 auto;
 }
 div.large-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
     max-width: 1170px;
     margin:0 auto;
+    background-color: #00043e;
+
 }
+    .large-container img {
+        width: 25vw;
+        height: auto;
+    }
+
+    .large-container figcaption {
+        display: none;
+    }
+
+    .large-container nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .large-container ul {
+        display: none;
+        padding: 3vw;
+    }
+    .large-container li {
+        padding-left: 2vw;
+    }
+
+    .secaoDestaque {
+        background-color: #00043e;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        align-content: center;
+        text-align: center;
+        color: #FFFFFF;
+
+    }
+    .secaoDestaque h2 {
+        width: 80%;
+        margin: auto;
+        font-size: 2.0em;
+        font-weight: 400;
+        }
+    .secaoDestaque p {
+        width: 80%;
+        margin: auto;
+        font-size: 1.4em;
+        font-weight: 300;
+    }
+    .secaoDestaqueFormulario {
+        padding-bottom: 100px;
+        padding-top: 10px;
+        margin:auto;
+        display: flex;
+        
+    }
+    .secaoDestaqueFormulario input {
+        border: 0px solid #FFFFFF;
+        border-radius: 5px 0px 0px 5px;
+        height: 20px;
+        margin: 0;
+        padding-left: 4%;
+        font-size: 0.7em;
+    }
+    .secaoDestaqueFormulario button {
+        background-color: #007aff;
+        border: none;
+        color: white;
+        border-radius: 0px 5px 5px 0px;
+        font-size: 0.7em;
+        height: 20px;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        margin:auto;
+        width: 70vw;
+        text-align: left;
+    }
+    .flex-col {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .flex-col h2 {
+        font-size: 1.5em;
+        color: #303030;
+    }
+    .flex-col--centerText {
+        display: flex;
+        align-items: center;
+
+    }
+    .flex-col--centerText h2 {
+        text-align: center;
+    }
+    .flex-col ul {
+        list-style: disc;
+        color:#818181;
+        font-size: 1.15em;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        max-width: 70%;
+    }
+ 
+
+    .flex-col p{
+        font-size: 1.25em;
+        padding-top: 50px;
+        color: #303030;
+    }
+    .flex-col span {
+        color: #818181;
+        font-size: 1.1em;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .flex-col button {
+        height: 50px;
+        border: 1px solid #818181;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+        color: #303030;
+        font-size: 1.3em;
+        margin-bottom: 50px;
+    }
+    .flex-col img {
+        height: 140px;
+        width: auto;
+    }
+    .flex-col figure {
+        margin: auto;
+        padding-bottom: 50px;
+    }
+    .flex-col figcaption {
+        display: none;
+    }
+
+    .secaoCursos {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .secaoCursos p {
+        margin-bottom: 50px;
+    }
+    .secaoCursos article ul li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        margin:auto;
+        padding-bottom: 50px;
+    }
+    .secaoCursos img {
+        height: 120px;
+        width: auto;
+        padding-bottom: 20px;
+
+    }
+
+    .secaoCursos__lista--pCinza p {
+        color: #818181;
+        padding-top: 20px;
+
+    }
 div.container{
     width: 100%;
     max-width: 1140px;
