@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/be8b725f74.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="icon-96x96.webp">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Landing Page Kenzie Academy</title>
@@ -15,19 +16,19 @@
 
     <div class="large-container">
       <!-- LOGO -->
-      <figure>
+      <figure class="desktopLogo">
         <img src="assets/img/logo.svg" alt="Logo Kenzie Academy">
         <figcaption>Logo Kenzie Academy</figcaption>  
       </figure>
 
       <!-- MENU DE NAVEGAÇÃO -->
       <nav>
-        <ul class="top__nav--row">
-          <li class="top_nav--items"><a href="#1">Sobre a Kenzie</a></li>
-          <li class="top_nav--items"><a href="#2">Agenda</a></li>
-          <li class="top_nav--items"><a href="#3">Contato</a></li>
+        <ul class="top__nav--row" id="lista">
+          <li class="top_nav--items"><a class="items" href="#1">Sobre a Kenzie</a></li>
+          <li class="top_nav--items"><a class="items" href="#2">Preços</a></li>
+          <li class="top_nav--items"><a class="items" href="#3">Contato</a></li>
         </ul>
-        <button></button>
+        
       </nav>
     </div>
 
@@ -79,9 +80,9 @@
         </div>
 
         <!-- COLUNA ESQUERDA -->
-        <div class="flex-col">
+        <div class="flex-col background--gray">
 
-            <figure>
+            <figure class="background--gray">
               <img src="assets/img/JavaScript-logo.png" alt="Java Script">
               <figcaption>Java Script</figcaption>  
             </figure>      
@@ -89,15 +90,15 @@
           </div>
 
         <!-- COLUNA DIREITA -->
-        <div class="flex-col flex-col--centerText">
+        <div class="flex-col flex-col--centerText background--gray">
 
-            <h2> LOREM IPSUM DOLOR SIT JAVASCRIPT</h2>
-            <ul>
-                <li>The standard Lorem Ipsum passage, used since the 1500s</li>
-                <li>Section 1.10.32 of "de Finibus Bonorum et Malorum" by Cicero in 45 BC</li>
-                <li>1914 translation by H. Rackham</li>
-                <li>Section 1.10.33 of "de Finibus Bonorum et Malorum", by Cicero in 45 BC</li>
-                <li>1914 translation by H. Rackham</li>
+            <h2 class="background--gray"> LOREM IPSUM DOLOR SIT JAVASCRIPT</h2>
+            <ul class="background--gray">
+                <li class="list__desktop--fontsize">The standard Lorem Ipsum passage, used since the 1500s</li>
+                <li class="list__desktop--fontsize">Section 1.10.32 of "de Finibus Bonorum et Malorum" by Cicero in 45 BC</li>
+                <li class="list__desktop--fontsize">1914 translation by H. Rackham</li>
+                <li class="list__desktop--fontsize">Section 1.10.33 of "de Finibus Bonorum et Malorum", by Cicero in 45 BC</li>
+                <li class="list__desktop--fontsize">1914 translation by H. Rackham</li>
             </ul>
 
         </div>
@@ -117,7 +118,7 @@
         <p>What we offer</p>
 
         <!-- LISTA DE CURSOS -->
-        <ul class="secaoCursos__lista--pCinza">
+        <ul class="secaoCursos__lista--pCinza secaoCursos__lista--Desktop">
         
           <li>
             <img src="assets/img/html-css.png" alt="">
@@ -169,7 +170,7 @@
       <!-- LISTA CALENDÁRIO -->
       <ul class="calendario">
 
-        <li>
+        <li class="lista-calendario">
           <span class="calendario-data">22/02</span>
           <h3>HTML/CSS</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
@@ -179,7 +180,7 @@
           </div>
         </li>
 
-        <li>
+        <li class="lista-calendario">
           <span class="calendario-data">23/02</span>
           <h3>JavaScript</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
@@ -189,7 +190,7 @@
           </div>
         </li>
 
-        <li>
+        <li class="lista-calendario">
           <span class="calendario-data">24/02</span>
           <h3>Python</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
@@ -205,13 +206,13 @@
 
     <section class="secaoContato">
 
-      <div class="flex">
+      <div class="secaoContato-flex">
 
         <!-- COLUNA LADO ESQUERDO -->
-        <div class="flex-col">
+        <div class="secaoContato-flex-col">
           
           <div class="secaoContato-informacoes">
-          
+            <h2>CONTACT</h2>
             <p>Contact us and we'll get back to you within 24 hours.</p>
             
             <ul>
@@ -225,11 +226,11 @@
         </div>
 
         <!-- COLUNA LADO DIRETO -->
-        <div class="flex-col">
+        <div class="secaoContato-flex-col">
           
-          <h2>Contact</h2>
+        
           
-          <form action="">
+          <form class="contact-us" action="">
 
             <div class="form-input-model">
               <label for="nome">Nome</label>
@@ -243,11 +244,11 @@
 
             <div class="form-input-model">
               <label for="mensagem">E-mail</label>
-              <textarea name="mensagem" id="mensagem"></textarea>
+              <textarea placeholder="Comment" name="mensagem" id="mensagem"></textarea>
             </div>
-
+            <div id="sendButton">
             <input type="submit" value="Send">
-
+              </div>
           </form>
 
         </div>
@@ -259,6 +260,7 @@
   </main>
 
   <footer>
+    <i class="fas fa-chevron-up"></i><br>
     <p>Kenzie Academy - <a href="kenzie.com.br">kenzie.com.br</a></p>
   </footer>
 
