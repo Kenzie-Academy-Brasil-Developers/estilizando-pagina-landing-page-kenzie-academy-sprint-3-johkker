@@ -29,7 +29,7 @@ family=Lato -> Títulos, textos
 /* FONTS */
 
 /* VARIÁVEIS */
-:root{}
+
   
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
@@ -57,7 +57,13 @@ img{
         justify-content: left;
     }
 
-
+    .fa-bars {
+        color: #818181;
+        font-size: 40px;
+        padding-right: 20px;
+        padding-top: 20px;
+    
+    }
 div.flex{
     display: flex;
 }
@@ -77,7 +83,7 @@ div.large-container{
 
 }
     .large-container img {
-        width: 25vw;
+        width: 15vw;
         height: auto;
     }
 
@@ -339,7 +345,12 @@ div.large-container{
         padding: 6%;
         margin-top: 30px;
     }
-
+    .secaoContato {
+        width: 100vw;
+        background-color: #818181;
+        text-align: center;
+        padding-top: 20px;
+    }
     .secaoContato-flex {
         display: flex;
         flex-direction: column;
@@ -384,8 +395,11 @@ div.large-container{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-    }
     
+    }
+    #sendButton input {
+        cursor: pointer;
+    }
     .contact-us input {
         width: 33%;
         height: 30px;
@@ -420,15 +434,25 @@ footer {
     text-align: center;
     color:#00043e;
 }
-.fas {
+footer p {
+        display: none;
+}
+.fa-chevron-up {
     color: #00043e;
-    font-size: 20px;
+    font-size: 60px;
+    cursor: pointer;
 }
 /* EXTRAS */
   
 
 /* MEDIA QUERIES */  
     @media screen and (min-width: 800px) {
+        .topo {
+            width: 100vw;
+        }
+        .fa-bars {
+            display: none;
+        }
         .large-container {
             height: 100px;
         }
@@ -500,7 +524,12 @@ footer {
         }
         .flex-col {
             width: 100%;
+            margin-top: 50px;
         }
+        .flex-col p {
+            width: 70%;
+        }
+        
        .secaoCursos article {
            width: 100%;
        }
@@ -523,7 +552,8 @@ footer {
         .secaoCalendar {
             width: 80%;
             flex-direction: column;
-            
+            margin: auto;
+
         }
         .calendario {
         display: grid;
@@ -532,15 +562,50 @@ footer {
         gap: 5% 5%;
         grid-template-areas: ". . .";
         width: 30%;
-        margin-left: 3%;
+        margin-left: 10%;
         margin-right: 3%;
+        
         }
         li.lista-calendario {
             width: 20vw;
 
         }
-
-
-
+        .calendario-data-rodape button {
+            font-size: 32px;
+        }
+        .secaoContato-flex {
+            width: 100vw;
+            flex-direction: row;
+            align-content: flex-start;
+        }
+        
+        .secaoContato-informacoes {
+            width: 100%;
+            margin-right: 0%;
+            padding-left: 25%;
+        }
+        .secaoContato-informacoes ul {
+            width: 100%;
+            font-size: 15px;
+        }
+        .secaoContato-informacoes p {
+            font-size: 15px;
+        }
+        
+        .secaoContato-flex-col {
+            width: 50vw;
+        }
+        .contact-us {
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 0%;
+        }
+        .form-input-model {
+            margin-top: 5px;
+        }
+        footer p {
+            display: inline-block;
+            cursor: pointer;
+        }
     }
 /* MEDIA QUERIES */
