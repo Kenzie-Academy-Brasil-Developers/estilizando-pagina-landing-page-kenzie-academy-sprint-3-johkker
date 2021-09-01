@@ -39,6 +39,10 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     font-family:'Lato', sans-serif;
     list-style: none;
 }
+
+.topo {
+    background-color: #00043e;
+}
 a {
     text-decoration: none;
     color: #303030;
