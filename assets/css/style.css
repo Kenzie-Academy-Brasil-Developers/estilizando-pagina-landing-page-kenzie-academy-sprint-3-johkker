@@ -481,6 +481,8 @@ footer p {
             padding: 0%;
             background-color: rgba(0,0,0,0);
             background-image: url("../img/background-destaque.webp");
+            background-size: 100vw;
+
             height: 320px;
         }
         .secaoDestaque h2 {
