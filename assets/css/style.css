@@ -299,7 +299,7 @@ div.large-container{
     .calendario {
         display: flex;
         flex-direction: column;
-        margin: auto;
+        margin:auto;
         text-align: center;
         width: 70vw;
 
@@ -321,7 +321,7 @@ div.large-container{
         font-weight: 400;
         padding-bottom: 15%;
         padding-top: 15%;
-        
+
 
     }
     .lista-calendario h3 {
