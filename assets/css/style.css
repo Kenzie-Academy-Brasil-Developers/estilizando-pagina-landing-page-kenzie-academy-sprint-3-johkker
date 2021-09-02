@@ -68,6 +68,9 @@ img{
         padding-top: 20px;
     
     }
+    .fas:hover {
+        cursor: pointer;
+    }
 div.flex{
     display: flex;
 }
@@ -106,6 +109,9 @@ div.large-container{
     }
     .large-container li {
         padding-left: 2vw;
+    }
+    .large-container li:hover {
+        cursor: pointer;
     }
 
     .secaoDestaque {
@@ -152,6 +158,9 @@ div.large-container{
         border-radius: 0px 5px 5px 0px;
         font-size: 0.7em;
         height: 20px;
+    }
+    .secaoDestaqueFormulario button:hover {
+        cursor: pointer;
     }
 
     .flex {
@@ -349,6 +358,9 @@ div.large-container{
         padding: 6%;
         margin-top: 30px;
     }
+    .calendario-data-rodape button {
+
+    }
     .secaoContato {
         width: 100vw;
         background-color: #818181;
@@ -457,6 +469,9 @@ footer p {
         .fa-bars {
             display: none;
         }
+        #hideBars {
+            display: none;
+        }
         .large-container {
             height: 100px;
         }
@@ -476,6 +491,7 @@ footer p {
             display: flex;
             padding: 3vw;
             color: #FFFFFF;
+            font-size: 14px;
         }
         .secaoDestaque {
             padding: 0%;
