@@ -583,15 +583,14 @@ footer p {
         gap: 5% 5%;
         grid-template-areas: ". . .";
         width: 30%;
-        margin-left: 10%;
-        margin-right: 3%;
+        margin: 0;
         
         }
         li.lista-calendario {
             width: 25vw;
         
         }
-        .secaoCalendar ul li span {
+        .lista-calendario .calendario-data {
             font-size: 36px;
         }
         .lista-calendario h3 {
