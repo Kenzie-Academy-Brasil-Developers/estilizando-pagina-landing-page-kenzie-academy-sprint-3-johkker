@@ -359,7 +359,7 @@ div.large-container{
         margin-top: 30px;
     }
     .calendario-data-rodape button {
-
+        cursor: pointer;
     }
     .secaoContato {
         width: 100vw;
@@ -466,9 +466,8 @@ footer p {
         .topo {
             width: 100vw;
         }
-        .fa-bars {
-            display: none;
-        }
+        
+    
         #hideBars {
             display: none;
         }
@@ -491,7 +490,7 @@ footer p {
             display: flex;
             padding: 3vw;
             color: #FFFFFF;
-            font-size: 14px;
+            font-size: 13px;
         }
         .secaoDestaque {
             padding: 0%;
@@ -589,8 +588,17 @@ footer p {
         
         }
         li.lista-calendario {
-            width: 20vw;
-
+            width: 25vw;
+        
+        }
+        .secaoCalendar ul li span {
+            font-size: 36px;
+        }
+        .lista-calendario h3 {
+            font-size: 19px;
+        }
+        .lista-calendario p {
+            font-size: 15px;
         }
         .calendario-data-rodape button {
             font-size: 32px;
